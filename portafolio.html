@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carlos Chica | Portafolio</title>
+    <link rel="preload" href="css/Normalize.css" as="style" />
+    <link rel="stylesheet" href="css/Normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="css/estilos.css" as="style" />
+    <link href="css/estilos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="barra-navegacion">
+        <div class="nav-container">
+          <a href="index.html" class="logo">⚡ Carlos Chica</a>
+          <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+          <ul class="enlaces-nav" id="menu-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="portafolio.html" class="activo">Portafolio &amp; PC</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="contenedor">
+      <section>
+        <div class="seccion-titulo">
+          <h2>Tecnologías &amp; Proyectos</h2>
+          <p>Navega a través de los proyectos interactivos que desarrollo</p>
+        </div>
+
+        <article
+          class="carousel-container"
+          onmouseenter="pausarAutoplay()"
+          onmouseleave="iniciarAutoplay()"
+        >
+          <div class="carousel-slides" id="carousel-track">
+            <div class="slide">
+              <img
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1200"
+                alt="Java Spring Boot"
+              />
+              <div class="slide-caption">
+                <h3>Java &amp; Spring Boot</h3>
+                <p>
+                  Creación de microservicios robustos, arquitecturas REST y
+                  conexión eficiente a bases de datos.
+                </p>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1200"
+                alt="C# .NET Core"
+              />
+              <div class="slide-caption">
+                <h3>C# (.NET Core)</h3>
+                <p>
+                  Estructuras y aplicaciones empresariales seguras bajo patrones
+                  de diseño limpios.
+                </p>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=1200"
+                alt="React TypeScript"
+              />
+              <div class="slide-caption">
+                <h3>React &amp; TypeScript</h3>
+                <p>
+                  Maquetación de interfaces web ágiles, reactivas y
+                  completamente tipadas para alto rendimiento.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-btn prev" onclick="cambiarSlide(-1)">❮</button>
+          <button class="carousel-btn next" onclick="cambiarSlide(1)">❯</button>
+          <div class="carousel-dots" id="carousel-dots-container"></div>
+        </article>
+      </section>
+
+      <section>
+        <div class="seccion-titulo">
+          <h2>Mi Estación de Trabajo</h2>
+          <p>Componentes físicos donde compilo mis ideas y código</p>
+        </div>
+
+        <div class="hardware-grid">
+          <article class="hardware-card">
+            <h3>Procesador</h3>
+            <p>AMD Ryzen 5 8500G</p>
+            <p
+              style="
+                font-size: 1.3rem;
+                margin-top: 10px;
+                color: var(--texto-secundario);
+              "
+            >
+              6 núcleos y 12 hilos de potencia Zen 4 ideales para flujos de
+              trabajo multitarea pesados.
+            </p>
+          </article>
+          <article class="hardware-card">
+            <h3>Placa Base</h3>
+            <p>Gigabyte B850M Eagle</p>
+            <p
+              style="
+                font-size: 1.3rem;
+                margin-top: 10px;
+                color: var(--texto-secundario);
+              "
+            >
+              Estabilidad extrema con soporte de última generación para memoria
+              DDR5 y PCIe.
+            </p>
+          </article>
+          <article class="hardware-card">
+            <h3>Almacenamiento &amp; RAM</h3>
+            <p>SSD NVMe + DDR5</p>
+            <p
+              style="
+                font-size: 1.3rem;
+                margin-top: 10px;
+                color: var(--texto-secundario);
+              "
+            >
+              Velocidades de lectura ultrarrápidas y compilación de dependencias
+              sin demoras.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="contenedor">
+        <p>© 2026 Carlos Ricardo Chica Solórzano - Universidad de Guayaquil</p>
+        <p
+          style="
+            font-size: 1.3rem;
+            margin-top: 10px;
+            color: var(--texto-secundario);
+          "
+        >
+          Asignatura: Desarrollo de Aplicaciones Web | Proyecto del Primer
+          Parcial
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
