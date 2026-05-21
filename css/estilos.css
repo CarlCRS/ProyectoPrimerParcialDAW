@@ -292,28 +292,6 @@ main.contenedor {
   right: 15px;
 }
 
-.carousel-dots {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 1rem;
-  z-index: 10;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.4);
-  cursor: pointer;
-}
-
-.dot.activo {
-  background-color: var(--primario);
-}
-
 /* --- HARDWARE --- */
 .hardware-grid {
   display: grid;
@@ -439,7 +417,6 @@ main.contenedor {
   font-size: 1.4rem;
 }
 
-/* --- FOOTER --- */
 footer {
   background-color: var(--bg-navegacion);
   border-top: 1px solid var(--borde);

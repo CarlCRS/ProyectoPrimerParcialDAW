@@ -19,11 +19,13 @@
     <header>
       <nav class="barra-navegacion">
         <div class="nav-container">
-          <a href="index.html" class="logo">⚡ Carlos Chica</a>
+          <a href="index.html" class="logo">🫩 Carlos Chica</a>
           <button class="menu-toggle" onclick="toggleMenu()">☰</button>
           <ul class="enlaces-nav" id="menu-links">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="portafolio.html" class="activo">Portafolio &amp; PC</a></li>
+            <li>
+              <a href="portafolio.html" class="activo">Portafolio &amp; PC</a>
+            </li>
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </div>
@@ -37,17 +39,10 @@
           <p>Navega a través de los proyectos interactivos que desarrollo</p>
         </div>
 
-        <article
-          class="carousel-container"
-          onmouseenter="pausarAutoplay()"
-          onmouseleave="iniciarAutoplay()"
-        >
+        <article class="carousel-container">
           <div class="carousel-slides" id="carousel-track">
             <div class="slide">
-              <img
-                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1200"
-                alt="Java Spring Boot"
-              />
+              <img src="/public/IMAGEN-JAVA.png" alt="Java Spring Boot" />
               <div class="slide-caption">
                 <h3>Java &amp; Spring Boot</h3>
                 <p>
@@ -57,10 +52,7 @@
               </div>
             </div>
             <div class="slide">
-              <img
-                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1200"
-                alt="C# .NET Core"
-              />
+              <img src="/public/Cshard.png" alt="C# .NET Core" />
               <div class="slide-caption">
                 <h3>C# (.NET Core)</h3>
                 <p>
@@ -70,10 +62,7 @@
               </div>
             </div>
             <div class="slide">
-              <img
-                src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=1200"
-                alt="React TypeScript"
-              />
+              <img src="/public/React.png" alt="React TypeScript" />
               <div class="slide-caption">
                 <h3>React &amp; TypeScript</h3>
                 <p>
@@ -84,9 +73,10 @@
             </div>
           </div>
 
-          <button class="carousel-btn prev" onclick="cambiarSlide(-1)">❮</button>
+          <button class="carousel-btn prev" onclick="cambiarSlide(-1)">
+            ❮
+          </button>
           <button class="carousel-btn next" onclick="cambiarSlide(1)">❯</button>
-          <div class="carousel-dots" id="carousel-dots-container"></div>
         </article>
       </section>
 
